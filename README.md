@@ -62,8 +62,6 @@ Questo avviene anche per le colonne, la colonna precedente alla prima colonna co
 
 Il processore i, per calcolare correttamente la sottomatrice della prossima generazione, ha bisogno delle due righe agli estremi in modo da calcolare tutti i vicini.  
 
-Esempio suddivisione:  
-![Suddivisione](img/suddivisione.png)
 
 In questo caso:
 - p0 deve calcolare le righe r0, r1, r2  ed allora ha bisogno anche di r11 (per i vicini in alto nella riga r0) e r3 (per i vicini in basso nella riga r2)
