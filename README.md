@@ -32,13 +32,13 @@ Feature after game starts:
 
 ## Game description
 
-When participating to a Sudoku game, players don't share the global board but can only see the fixed numbers and those they placed themselves.  
+When participating to a Sudoku game, players don't share the global board but can only see the fixed numbers and and those they placed in their local board.  
 
 Each player has a score and earns 1 pt every time he places a number that no other player in the challenge has found. If the number is correct but already found by another player, no point is given. 
 
 There is a penalization of 1 pt if the player attempts to place a wrong number in an empty cell or try to place a number in a fixed cell.  
 
-The challenge ends as soon as one player has completed his own board. Direct messages are sent to the other players in the same room after each move, specifying the score of the move.
+The challenge ends when one player has completed his local board. Direct messages are sent to the other players in the same room after each move, specifying the score of the move itself.
 
 
 # Architecture
