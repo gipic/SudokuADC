@@ -21,11 +21,11 @@ This project is a Sudoku challenge game on a P2P network. It has been developed 
 
 The game requires a nickname based login to create a new Sudoku game or to join one. Nicknames and game names must be unique.  
 
-Feature before game starts:
+Features before game starts:
 - Create game: generate a new game and then join it
 - Join game: entering an existing game
 
-Feature after game starts:
+Features after game starts:
 - View Sudoku: get local board of the player
 - Place number: place a number on local board and get the score of the move
 - Exit: leave the game
@@ -43,10 +43,16 @@ The challenge ends when one player has completed his local board. Direct message
 
 # Architecture
 
-Dht feature:
-- a
-- b
-- c
+When a new Sudoku game is generated, a MatchData object is stored into the Dht at "gameName" path.
+It contains:
+- startGrid: initial board generated
+- sharedGrid: global board filled by all correct numbers placed by the players
+- solvedGrid: solution board to calcuate the score of the player move
+- players: list of players with nicknames, peers and scores.
+
+When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
+The player "subribes" to the match by adding himself into the player list of MatchData object, with the aim to send/receive direct messages with the other players of the match.  After he places a number, the local grid is updated.
+
 
 # Test
 
