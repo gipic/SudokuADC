@@ -76,9 +76,11 @@ Steps:
 
 1) Clone the project from github: <a>https://github.com/gipic/SudokuADC</a>
 
-2) Move to the project folder and build the docker container with the following command: ``docker build --no-cache -t p2p-sudoku-adc .``
+2) Move to the project folder and build the docker container with the following command:  
+``docker build --no-cache -t p2p-sudoku-adc .``
 
-3) Start the master peer with the following command: ``docker run -i --name MASTER-PEER -e MASTERIP="127.0.0.1" -e ID=0 p2p-sudoku-adc``
+3) Start the master peer with the following command:  
+``docker run -i --name MASTER-PEER -e MASTERIP="127.0.0.1" -e ID=0 p2p-sudoku-adc``
 
     the MASTERIP environment variable is the master peer ip address and the ID environment variable is the unique id of your peer. Remeber you have to run the master peer using the ID=0.
 
