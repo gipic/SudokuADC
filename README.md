@@ -19,6 +19,7 @@ This project is a Sudoku challenge game on a P2P network. It has been developed 
 - [Apache Maven](https://maven.apache.org/): Software project management
 - [JUnit](https://junit.org/junit5/): Unit testing framework for the Java programming language
 
+\
 The game requires a nickname based login to create a new Sudoku game or to join one. Nicknames and game names must be unique.  
 
 Features before game starts:
