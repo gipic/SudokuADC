@@ -47,9 +47,9 @@ When a new Sudoku game is generated, a MatchData object is stored into the Dht a
 
 It contains:
 - startGrid: initial board generated
-- sharedGrid: global board filled by all correct numbers placed by the players
+- sharedGrid: global board filled with all correct numbers placed by the players
 - solvedGrid: solution board to calcuate the score of the player move
-- players: list of players with nicknames, peers and scores.
+- players: list of players with nicknames, peer addresses and scores.
   
 \
 When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
@@ -60,11 +60,35 @@ After he places a number, the local grid is updated.
 
 
 # Test
+The tests provide an example game with 4 peers which communicate and play together joining the same game. Functionalities tested:
+- creating a new game
+- join an existing game
+- trying to login with an existing username
+- trying to create a new game with an existing game name
+- trying to join a game with a non valid game name
+- calculating the correct score of the move
+- leaving the game
 
-Testing
 
 # Build and run with Docker
 
-Per lanciare il programma, dal master digitare:
+Steps:
 
-    mpirun -np <numProcs> --hostfile machinefile ./par <numRighe> <numColonne> <numGenerazioni>
+1) Clone the project from github at: <a>https://github.com/gipic/SudokuADC</a>
+
+2) Move to the project folder and build the docker container with the following command:
+
+    docker build --no-cache -t p2p-sudoku-adc .
+
+3) Start the master peer with the following command:
+
+``docker run -i --name MASTER-PEER -e MASTERIP="127.0.0.1" -e ID=0 p2p-sudoku-adc``
+
+the MASTERIP envirnoment variable is the master peer ip address and the ID environment variable is the unique id of your peer. Remeber you have to run the master peer using the ID=0.
+
+4) Start a generic peer, to do that you first have to check the ip address of your container:
+- Check the docker: ``docker ps``
+- Check the IP address: ``docker inspect <container ID>``
+
+Now you can start peers by executing the following command passing the IP address previously found as MASTERIP:
+``docker run -i --name PEER-1 -e MASTERIP="172.17.0.2" -e ID=1 p2p-sudoku-adc`` 
