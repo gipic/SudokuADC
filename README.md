@@ -62,10 +62,10 @@ After he places a number, the local grid is updated.
 # Test
 The tests provide an example game with 4 peers which communicate and play together joining the same game. Functionalities tested:
 - creating a new game
-- join an existing game
-- trying to login with an existing username
-- trying to create a new game with an existing game name
-- trying to join a game with a non valid game name
+- joining an existing game
+- attempt to login with an existing username
+- attempt to create a new game with an existing game name
+- attempt to join a game with a non valid game name
 - calculating the correct score of the move
 - leaving the game
 
@@ -78,7 +78,7 @@ Steps:
 
 2) Move to the project folder and build the docker container with the following command:
 
-    docker build --no-cache -t p2p-sudoku-adc .
+``docker build --no-cache -t p2p-sudoku-adc .``
 
 3) Start the master peer with the following command:
 
