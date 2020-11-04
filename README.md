@@ -51,7 +51,7 @@ It contains:
 - solvedGrid: solution board to calcuate the score of the player move
 - players: list of players with nicknames, peers and scores.  
 
-When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
+  When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
 
 The player "subscribes" to the match by adding himself into the player list of MatchData object, with the aim to send/receive direct messages with the other players of the match.  
 
