@@ -3,7 +3,7 @@
 This project has been developed as final course work for Distributed Systems course at the University of Salerno.
 
 Candidate:  
-**Piccolo Gianluca - 0522500596**
+Piccolo Gianluca - 0522500596
 
 ## Homework assignment
 
