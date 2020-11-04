@@ -74,7 +74,7 @@ The tests provide an example game with 4 peers which communicate and play togeth
 
 Steps:
 
-1) Clone the project from github at: <a>https://github.com/gipic/SudokuADC</a>
+1) Clone the project from github: <a>https://github.com/gipic/SudokuADC</a>
 
 2) Move to the project folder and build the docker container with the following command: ``docker build --no-cache -t p2p-sudoku-adc .``
 
