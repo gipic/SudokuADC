@@ -5,7 +5,7 @@ This project has been developed as final course work for Distributed Systems cou
 Candidate:  
 Piccolo Gianluca - 0522500596
 
-## Homework assignment
+## Homework
 
 Date of birth: 03/03/1995  
 md5(gianlucapiccolo-03) = d2c8ef93317526ed291cc1590c0377b0    
