@@ -9,7 +9,7 @@ Piccolo Gianluca - 0522500596
 
 Date of birth: 03/03/1995  
 md5(gianlucapiccolo-03) = d2c8ef93317526ed291cc1590c0377b0    
-First character is "d" so homework assigned is number 4 (Sudoku)
+First character is "d" so assignment is Sudoku (value 4)
 
 
 ## Project description and overview
