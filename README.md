@@ -43,7 +43,7 @@ The challenge ends when one player has completed his local board. Direct message
 
 # Architecture
 
-When a new Sudoku game is generated, a MatchData object is stored into the Dht at "gameName" path.
+When a new Sudoku game is generated, a MatchData object is stored into the Dht at "gameName" path.  
 It contains:
 - startGrid: initial board generated
 - sharedGrid: global board filled by all correct numbers placed by the players
@@ -51,7 +51,10 @@ It contains:
 - players: list of players with nicknames, peers and scores.
 
 When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
-The player "subribes" to the match by adding himself into the player list of MatchData object, with the aim to send/receive direct messages with the other players of the match.  After he places a number, the local grid is updated.
+
+The player "subscribes" to the match by adding himself into the player list of MatchData object, with the aim to send/receive direct messages with the other players of the match.  
+
+After he places a number, the local grid is updated.
 
 
 # Test
