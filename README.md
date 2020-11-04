@@ -77,6 +77,7 @@ The tests provide an example game with 4 peers which communicate and play togeth
 # Build and run with Docker
 
 See the Dockerfile, for the builing details.  
+
 Steps:
 
 1) Clone the project from github: <a>https://github.com/gipic/SudokuADC</a>
