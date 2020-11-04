@@ -36,7 +36,7 @@ Sudoku library: <a> https://github.com/a11n/sudoku </a>
 
 ## Game description
 
-When participating to a Sudoku game, players don't share the global board but can only see the fixed numbers and and those they placed in their local board.  
+During a Sudoku game, players don't share the global board but can only see the fixed numbers and those they placed in their local board.  
 
 Each player has a score and earns 1 pt every time he places a number that no other player in the challenge has found. If the number is correct but already found by another player, no point is given. 
 
