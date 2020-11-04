@@ -30,6 +30,9 @@ Features after game starts:
 - Place number: place a number on local board and get the score of the move
 - Exit: leave the game
 
+\
+Sudoku library: <a> https://github.com/a11n/sudoku </a>
+
 ## Game description
 
 When participating to a Sudoku game, players don't share the global board but can only see the fixed numbers and and those they placed in their local board.  
