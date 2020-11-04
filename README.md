@@ -2,13 +2,16 @@
 
 This project has been developed as final course work for Distributed Systems course at the University of Salerno.
 
-Candidate: **Piccolo Gianluca - 0522500596**
+Candidate:  
+**Piccolo Gianluca - 0522500596**
 
 
 ## Project Description
 
 This project is a Sudoku challenge game on a P2P network. It has been developed in Java, using the following technologies:
-- [TompP2P](https://tomp2p.net/): P2P-based key-value pair storage library. 
+- [TompP2P](https://tomp2p.net/): P2P-based key-value pair storage library
+- [Apache Maven](https://maven.apache.org/): Software project management
+- [JUnit](https://junit.org/junit5/): Unit testing framework for the Java programming language
 
 In questo progetto è stato utilizzato OpenMPI per l'implementazione di "Game of Life".  
 Si tratta di un gioco nel quale è presente una griglia bidimensionale di celle, dove ogni cella ha due possibili stati: viva oppure morta.  
