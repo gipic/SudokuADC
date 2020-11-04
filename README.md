@@ -80,7 +80,7 @@ Steps:
 
 3) Start the master peer with the following command: ``docker run -i --name MASTER-PEER -e MASTERIP="127.0.0.1" -e ID=0 p2p-sudoku-adc``
 
-the MASTERIP envirnoment variable is the master peer ip address and the ID environment variable is the unique id of your peer. Remeber you have to run the master peer using the ID=0.
+    the MASTERIP envirnoment variable is the master peer ip address and the ID environment variable is the unique id of your peer. Remeber you have to run the master peer using the ID=0.
 
 4) Start a generic peer, to do that you first have to check the ip address of your container:
     * Check the docker: ``docker ps``
