@@ -41,7 +41,7 @@ There is a penalization of 1 pt if the player attempts to place a wrong number i
 The challenge ends when one player has completed his local board. Direct messages are sent to the other players in the same room after each move, specifying the score of the move itself.
 
 
-# Architecture
+## Architecture
 
 When a new Sudoku game is generated, a MatchData object is stored into the Dht at "gameName" path. 
 
@@ -50,6 +50,7 @@ It contains:
 - sharedGrid: global board filled by all correct numbers placed by the players
 - solvedGrid: solution board to calcuate the score of the player move
 - players: list of players with nicknames, peers and scores.
+
 
 When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
 
