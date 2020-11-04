@@ -12,7 +12,7 @@ md5(gianlucapiccolo-03) = d2c8ef93317526ed291cc1590c0377b0
 First character is "d" so homework assigned is number 4 (Sudoku)
 
 
-## Project Description and overview
+## Project description and overview
 
 This project is a Sudoku challenge game on a P2P network. It has been developed in Java, using the following technologies:
 - [TompP2P](https://tomp2p.net/): P2P-based key-value pair storage library
@@ -33,7 +33,12 @@ Feature after game starts:
 ## Game description
 
 When participating to a Sudoku game, players don't share the global board but can only see the fixed numbers and those they placed themselves.  
-Each player has a score and earns 1 pt every time he places a number that no other player in the challenge has found. If the number is correct but already found by another player, no point is given. There is a penalization of 1 pt if the player attempts to place a wrong number in an empty cell or try to place a number in a fixed cell. The challenge ends as soon as one player has completed his own board. Direct messages are sent to the other players in the same room after each move, specifying the score of the move.
+
+Each player has a score and earns 1 pt every time he places a number that no other player in the challenge has found. If the number is correct but already found by another player, no point is given. 
+
+There is a penalization of 1 pt if the player attempts to place a wrong number in an empty cell or try to place a number in a fixed cell.  
+
+The challenge ends as soon as one player has completed his own board. Direct messages are sent to the other players in the same room after each move, specifying the score of the move.
 
 
 # Architecture
