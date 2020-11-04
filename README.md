@@ -86,5 +86,5 @@ Steps:
     * Check the docker: ``docker ps``
     * Check the IP address: ``docker inspect <container ID>``
 
-Now you can start peers by executing the following command passing the IP address previously found:
+Now you can start peers by executing the following command passing the IP address previously found:  
 ``docker run -i --name PEER-1 -e MASTERIP="172.17.0.2" -e ID=1 p2p-sudoku-adc`` 
