@@ -49,9 +49,7 @@ It contains:
 - startGrid: initial board generated
 - sharedGrid: global board filled by all correct numbers placed by the players
 - solvedGrid: solution board to calcuate the score of the player move
-- players: list of players with nicknames, peers and scores.
-
-    
+- players: list of players with nicknames, peers and scores.  
 
 When the player joins a game, the local grid (initially corresponds to initial grid) is stored into the Dht at "nickname" path.  
 
