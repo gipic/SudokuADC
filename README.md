@@ -52,7 +52,7 @@ When a new Sudoku game is generated, a *MatchData* object is stored into the Dht
 It contains:
 - startGrid: initial board generated
 - sharedGrid: global board filled with all correct numbers placed by the players
-- solvedGrid: solution board to calcuate the score of the player move
+- solvedGrid: solution board to calculate the score of the player move
 - players: list of players with nicknames, peer addresses and scores.
   
 \
@@ -60,7 +60,7 @@ When the player joins a game, the local grid (initially corresponds to initial g
 
 The player "subscribes" to the match by adding himself into the player list of MatchData object, with the aim to send/receive direct messages with the other players of the match.  
 
-After he places a number, the local grid is updated.
+After he places a number, the local grid ("nickname" path), player score and shared grid ("gameName" path) are updated.
 
 
 # Test
