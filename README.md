@@ -43,7 +43,8 @@ The challenge ends when one player has completed his local board. Direct message
 
 # Architecture
 
-When a new Sudoku game is generated, a MatchData object is stored into the Dht at "gameName" path.  
+When a new Sudoku game is generated, a MatchData object is stored into the Dht at "gameName" path. 
+
 It contains:
 - startGrid: initial board generated
 - sharedGrid: global board filled by all correct numbers placed by the players
