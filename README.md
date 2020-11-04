@@ -1,19 +1,14 @@
-# SudokuADC - Progetto di Architetture Distribuite per il Cloud
+# SudokuADC
 
-Studente: **Piccolo Gianluca**
+This project has been developed as final course work for Distributed Systems course at the University of Salerno.
 
-Matricola: **0522500596**
-
-Esame: **Architetture Distribuite per il Cloud - A.A. 2019-20**
-
-Docenti: **Alberto Negro, Gennaro Cordasco e Carmine Spagnuolo**
-
-Dipartimento di Informatica - Università degli Studi di Salerno
+Candidate: **Piccolo Gianluca - 0522500596**
 
 
+## Project Description
 
-
-## Descrizione del progetto
+This project is a Sudoku challenge game on a P2P network. It has been developed in Java, using the following technologies:
+- [TompP2P](https://tomp2p.net/): P2P-based key-value pair storage library. 
 
 In questo progetto è stato utilizzato OpenMPI per l'implementazione di "Game of Life".  
 Si tratta di un gioco nel quale è presente una griglia bidimensionale di celle, dove ogni cella ha due possibili stati: viva oppure morta.  
