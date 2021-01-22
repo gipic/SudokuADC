@@ -15,7 +15,7 @@ First character is "d" so assignment is Sudoku (value 4)
 ## Project description and overview
 
 This project is a Sudoku challenge game on a P2P network. It has been developed in Java, using the following technologies:
-- [TompP2P](https://tomp2p.net/): P2P-based key-value pair storage library
+- [TomP2P](https://tomp2p.net/): P2P-based key-value pair storage library
 - [Apache Maven](https://maven.apache.org/): Software project management
 - [JUnit](https://junit.org/junit5/): Unit testing framework for the Java programming language
 
